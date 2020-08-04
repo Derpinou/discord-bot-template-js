@@ -1,4 +1,4 @@
-const Bot= require('./Base/Client');
+const Bot = require('./Base/Client');
 
 const client = new Bot({fetchAllMembers: true});
 function loadCommand(commandPath, commandName) {
