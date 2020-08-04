@@ -1,0 +1,18 @@
+{
+  "name": "djs template",
+  "version": "1.0.0",
+  "description": "Template pour bot discord, utilise discord.js",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "util": "^0.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Derpinou",
+  "license": "ISC"
+}
