@@ -1,6 +1,6 @@
-const FrancoBot = require('./Base/Client');
+const Bot= require('./Base/Client');
 
-const client = new FrancoBot({fetchAllMembers: true});
+const client = new Bot({fetchAllMembers: true});
 function loadCommand(commandPath, commandName) {
     try {
         const props = new (require(`${commandPath}${path.sep}${commandName}`))(client);
