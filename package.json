@@ -1,5 +1,5 @@
 {
-  "name": "djs template",
+  "name": "djstemplate",
   "version": "1.0.0",
   "description": "Template pour bot discord, utilise discord.js",
   "main": "index.js",
