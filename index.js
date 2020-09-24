@@ -1,6 +1,7 @@
 const Bot = require('./Base/Client');
-
+//Création du client
 const client = new Bot({fetchAllMembers: true});
+//Fonction pour charger une commande
 function loadCommand(commandPath, commandName) {
     try {
         const props = new (require(`${commandPath}${path.sep}${commandName}`))(client);
@@ -22,9 +23,10 @@ const {promisify} = require("util"),
     fs = require('fs'),
     readdir = promisify(require("fs").readdir),
     path = require('path');
+//Déclaration de la fonction init
 const init = async () => {
 
-
+//Command Handler
     fs.readdir("./commands/", (err, content) => {
         if (err) console.log(err);
         if (content.length < 1) return console.log('Please create folder in "commands" folder.');
@@ -45,7 +47,7 @@ const init = async () => {
         });
     });
 
-
+//Event Handler
     const evtFiles = await readdir("./events/");
     console.log(`Loading a total of ${evtFiles.length} events.`);
     evtFiles.forEach(file => {
@@ -58,16 +60,18 @@ const init = async () => {
     await client.login(config.token); 
 
 };
+//Utilisation de la fonction init
 init();
 
-
+//Log si le bot se deconnecte, reconnecte, a une erreur
 client.on("disconnect", () => console.log("Bot is disconnecting..."))
     .on("reconnecting", () => console.log("Bot reconnecting..."))
     .on("error", e => console.log(e))
     .on("warn", info => console.log(info));
 
-
+//Log si le process renvoi une erreur
 process.on("unhandledRejection", err => {
     console.error("Uncaught Promise Error: ", err);
 });
+//Exportation de la variable client
 module.exports = client;
