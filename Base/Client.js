@@ -8,6 +8,7 @@ class Bot extends Client {
         this.config = require("../config.js"); // Chargement du fichier de configuration
         this.commands = new Collection(); // Déclaration de la nouvelle Collection commands
         this.functions = require('../utils/functions.js'); // Chargement du fichier de fonctions
+    }
 }
 //Exportation de la class Bot
 module.exports = Bot
