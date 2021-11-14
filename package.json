@@ -1,18 +1,23 @@
 {
-  "name": "djstemplate",
-  "version": "1.0.0",
-  "description": "Template pour bot discord, utilise discord.js",
-  "main": "index.js",
   "dependencies": {
-    "discord.js": "^12.2.0",
-    "fs": "0.0.1-security",
-    "path": "^0.12.7",
-    "util": "^0.12.3"
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.23.1",
+    "discord.js": "^13.3.1"
   },
-  "devDependencies": {},
+  "name": "discord-bot-template",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cmd": "node setup/commandRegister.js",
+    "start": "node index.js",
+    "pm2": "pm2 start index.js --name bot"
   },
-  "author": "Derpinou",
-  "license": "ISC"
+  "keywords": [],
+  "author": "github.com/derpinou",
+  "license": "ISC",
+  "description": "Discord.js@13.x.x template",
+  "devDependencies": {
+    "chalk": "^4.1.2"
+  }
 }

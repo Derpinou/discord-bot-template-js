@@ -1,6 +1,11 @@
 module.exports = {
-    token: "", //Token du bot
-    botId: "", //Id du bot
-    owner: "", //Id du Propriétaire
-    prefix: '!'//Prefix du bot
+    token: "SUPER_SECRET_TOKEN",
+    owners: ["DISCORD_USER_ID"],
+    commands: [
+        {
+            name: 'ping',
+            description: "pong",
+            type: 1
+        }
+    ]
 }

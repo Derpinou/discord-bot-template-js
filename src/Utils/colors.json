@@ -1,0 +1,30 @@
+{
+  "blurple": {
+    "hex": "5865F2",
+    "decimal": 5793266
+  },
+  "red": {
+    "hex": "ED4245",
+    "decimal": 15548997
+  },
+  "green": {
+    "hex": "57F287",
+    "decimal": 5763719
+  },
+  "yellow": {
+    "hex": "FEE75C",
+    "decimal": 16705372
+  },
+  "white": {
+    "hex": "FFFFFF",
+    "decimal": 16777215
+  },
+  "black": {
+    "hex": "23272a",
+    "decimal": 2303786
+  },
+  "fuchsia": {
+    "hex": "EB459E",
+    "decimal": 15418782
+  }
+}
